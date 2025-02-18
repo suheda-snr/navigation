@@ -36,9 +36,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            Scaffold {
-                ScaffoldApp(),
-                modifier = Modifier.padding(innerPadding)
+            ScaffoldTheme {
+                ScaffoldApp()
             }
         }
     }
